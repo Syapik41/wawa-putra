@@ -144,7 +144,7 @@ function songModal() {
 }
 
 function calendarModal() {
-  const googleCalendar = 'https://calendar.google.com/calendar/render?action=TEMPLATE&text=Putra%20%26%20Najwa%20Merisik%20%26%20Pertunangan&dates=20261122T030000Z%2F20261122T053000Z&details=Majlis%20Merisik%20%26%20Pertunangan%20Putra%20and%20Najwa&location=IBUNDA%20GRAND%20HALL%2C%20SELAYANG%20CAPITOL';
+  const googleCalendar = 'https://calendar.google.com/calendar/render?action=TEMPLATE&text=Putra%20%26%20Wawa%20Merisik%20%26%20Pertunangan&dates=20261122T030000Z%2F20261122T053000Z&details=Majlis%20Merisik%20%26%20Pertunangan%20Putra%20and%20Wawa&location=IBUNDA%20GRAND%20HALL%2C%20SELAYANG%20CAPITOL';
   return `${heading('Sunday, 22 November 2026')}
     <p>11:00 AM - 1:30 PM</p>
     <div class="modal-actions">
@@ -208,13 +208,13 @@ function downloadCalendar() {
   const event = [
     'BEGIN:VCALENDAR',
     'VERSION:2.0',
-    'PRODID:-//Jemputan//Putra and Najwa//EN',
+    'PRODID:-//Jemputan//Putra and Wawa//EN',
     'BEGIN:VEVENT',
     'UID:putra-wawa-20261122@jemputan.me',
     'DTSTAMP:20261009T000000Z',
     'DTSTART:20261122T030000Z',
     'DTEND:20261122T053000Z',
-    'SUMMARY:Putra and Najwa Merisik and Pertunangan',
+    'SUMMARY:Putra and Wawa Merisik and Pertunangan',
     'LOCATION:IBUNDA GRAND HALL\\, SELAYANG CAPITOL',
     'END:VEVENT',
     'END:VCALENDAR',
@@ -223,7 +223,7 @@ function downloadCalendar() {
   const url = URL.createObjectURL(file);
   const link = document.createElement('a');
   link.href = url;
-  link.download = 'putra-and-najwa-engagement.ics';
+  link.download = 'putra-and-wawa-engagement.ics';
   link.click();
   URL.revokeObjectURL(url);
 }
